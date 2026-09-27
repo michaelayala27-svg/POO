@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: #f7f4ed; color: #24332e; font-family: Arial, Helvetica, sans-serif; }
+.pagina { width: min(100% - 32px, 900px); margin: 0 auto; padding: 72px 0 28px; }
+.encabezado { max-width: 700px; margin-bottom: 40px; }
+.etiqueta { color: #8a6a32; font-size: .85rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+h1 { margin: 14px 0; font-family: Georgia, serif; font-size: clamp(2.6rem, 7vw, 4.6rem); line-height: 1.08; }
+.encabezado p { color: #586760; font-size: 1.1rem; line-height: 1.6; }
+.tarjeta { display: grid; grid-template-columns: 160px 1fr; gap: 32px; padding: 40px; background: white; border: 1px solid #e8e1d4; border-radius: 20px; box-shadow: 0 16px 45px rgb(36 51 46 / 7%); }
+.simbolo { display: grid; place-items: center; width: 140px; height: 140px; border-radius: 50%; background: #e9dfc9; color: #8a6a32; font-size: 4rem; }
+h2 { margin: 0 0 16px; font-family: Georgia, serif; font-size: 2rem; }
+.contenido p { color: #4d5c55; line-height: 1.75; }
+.datos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+.datos div { padding-top: 14px; border-top: 1px solid #ded8cc; }
+dt { margin-bottom: 8px; color: #6b776f; font-size: .85rem; }
+dd { margin: 0; font-weight: 700; }
+button { padding: 11px 18px; border: 0; border-radius: 8px; background: #795925; color: white; font: inherit; cursor: pointer; }
+button:hover, button:focus-visible { background: #5e4319; }
+.dato-extra { margin: 14px 0 0; }
+.fuente { margin-top: 24px; }
+a { color: #795925; font-weight: 700; text-decoration: none; }
+a:hover, a:focus-visible { text-decoration: underline; }
+footer { margin-top: 36px; color: #78837c; font-size: .85rem; text-align: center; }
+@media (max-width: 650px) { .pagina { padding-top: 48px; } .tarjeta { grid-template-columns: 1fr; padding: 26px; } .simbolo { width: 90px; height: 90px; font-size: 2.8rem; } .datos { grid-template-columns: 1fr; } }
